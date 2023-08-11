@@ -120,6 +120,10 @@ ul {
   padding: 0;
 }
 
+.product_title{
+  cursor: pointer;
+}
+
 .img {
   width: 100%;
   display: block;
