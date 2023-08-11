@@ -21,12 +21,22 @@
             onchange="filterBasedOnTitle()" />
           </form> -->
           <!-- categories -->
-          <h5>Products</h5>
+          <h5 onclick="allProducts()" class="product_title">Products</h5>
           <article class="companies" id="com">
             <button class="company-btn">all</button>
             <button class="company-btn">ikea</button>
             <button class="company-btn">marcos</button>
           </article>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filter Button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="filterPrice('low_price')">Low To High Price</a></li>
+              <li><a class="dropdown-item" href="#" onclick="filterPrice('high_price')">High To Low Price</a></li>
+              <li><a class="dropdown-item" href="#" onclick="filterPrice('high_ratting')">Ratting High To Low</a></li>
+            </ul>
+          </div>
         </div>
         <!-- products -->
         <div class="products-container" id="product">
