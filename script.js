@@ -43,6 +43,24 @@ function filter(category) {
   displayMain(filterData);
 } 
 
+function allProducts() {
+  return displayMain(data);
+}
+
+function filterPrice(argu) {
+  let newPrice = data.sort(function(a,b){
+    if (argu == "low_price") {
+      return a.price - b.price
+    }
+    else if (argu == "high_price") {
+      return b.price - a.price
+    }
+    else if (argu == "high_ratting") {
+      return b.rating.rate - a.rating.rate
+    }
+  })
+  displayMain(newPrice);
+}
 
 
 
